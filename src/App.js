@@ -1,7 +1,9 @@
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import {makeStyles} from '@material-ui/core/styles'
 import Contact from './screens/Contact'
+import ChatContent from './screens/ChatContent'
 import Grid from '@material-ui/core/Grid'
+
 
 const styles = makeStyles((theme) => {
   return {
@@ -31,12 +33,12 @@ const App = () => {
 
   return (
     <div className={classes.root}>
-      <Grid container spacing={1}>
+      <Grid container spacing={0}>
         <Grid item xs={4}>
         <Contact></Contact>
         </Grid>
         <Grid item xs={8}>
-          Kanan
+        <ChatContent></ChatContent>
         </Grid>
       </Grid>
     </div>
